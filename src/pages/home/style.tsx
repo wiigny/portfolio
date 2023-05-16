@@ -1,9 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react";
 
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
 import backgroundImg from "@/public/static/img/background/header-bg.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
@@ -15,6 +13,7 @@ export const Header = styled("header", {
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
+  backgroundSize: "30%",
   borderBottom: "2px solid $grey5",
   "@tablet": {
     backgroundPosition: "right -10% center",

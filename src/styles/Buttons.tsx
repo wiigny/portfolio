@@ -18,6 +18,7 @@ export const Button = styled("button", {
   alignItems: "center",
   width: "max-content",
   whiteSpace: "nowrap",
+  transition: "0.2s",
 
   variants: {
     type: {
@@ -110,6 +111,7 @@ export const Button = styled("button", {
         height: "2.75rem",
         minWidth: "2.75rem",
         minHeight: "2.75rem",
+        transition: "0.2s",
         ["& + a"]: {
           marginLeft: "$2",
         },

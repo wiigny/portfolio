@@ -29,9 +29,27 @@ export const ProjectLink = styled("a", {
   display: "flex",
   alignItems: "center",
   lineHeight: "0",
+  transition: "0.2s",
+  position: "relative",
+
+  "&:before": {
+    content: "",
+    position: "absolute",
+    bottom: "-5px",
+    width: "100%",
+    height: "0",
+    borderBottom: "2px solid transparent",
+    transform: "scaleX(0)",
+    transition: "0.4s ease-in-out",
+  },
 
   "&:hover": {
     color: "$grey5",
+
+    "&:before": {
+      borderBottomColor: "$brand1",
+      transform: "scaleX(1)",
+    },
   },
 
   [`& svg`]: {
@@ -53,7 +71,7 @@ export const Project = styled("article", {
       },
 
       "&::before": {
-        content: 'New',
+        content: "New",
         position: "absolute",
         top: "5px",
         right: "-4rem",
